@@ -7,37 +7,95 @@ export function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://preactjs.com" target="_blank">
-          <img src={preactLogo} class="logo preact" alt="Preact logo" />
-        </a>
-      </div>
-      <h1>Vite + Preact</h1>
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/app.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p>
-        Check out{' '}
-        <a
-          href="https://preactjs.com/guide/v10/getting-started#create-a-vite-powered-preact-app"
-          target="_blank"
-        >
-          create-preact
-        </a>
-        , the official Preact + Vite starter
-      </p>
-      <p class="read-the-docs">
-        Click on the Vite and Preact logos to learn more
-      </p>
-    </>
-  )
+    <div className="contacts">
+        <article className="contact-card">
+            <img 
+                src="./images/gato1.jpg"
+                alt="Photo of Mr. Whiskerson"
+            />
+            <h3>Mr. Whiskerson</h3>
+            <div className="info-group">
+                <img 
+                    src="./images/phone.png" 
+                    alt="phone icon" 
+                />
+                <p>(212) 555-1234</p>
+            </div>
+            <div className="info-group">
+                <img 
+                    src="./images/mail.png" 
+                    alt="mail icon"
+                />
+                <p>mr.whiskaz@catnap.meow</p>
+            </div>
+        </article>
+        
+        <article className="contact-card">
+            <img 
+                src="./images/gato2.jpg"
+                alt="Photo of Fluffykins"
+            />
+            <h3>Fluffykins</h3>
+            <div className="info-group">
+                <img 
+                    src="./images/phone.png" 
+                    alt="phone icon" 
+                />
+                <p>(212) 555-2345</p>
+            </div>
+            <div className="info-group">
+                <img 
+                    src="./images/mail.png" 
+                    alt="mail icon"
+                />
+                <p>fluff@me.com</p>
+            </div>
+        </article>
+        
+        <article className="contact-card">
+            <img 
+                src="./images/gato3.jpg"
+                alt="Photo of Felix"
+            />
+            <h3>Felix</h3>
+            <div className="info-group">
+                <img 
+                    src="./images/phone.png" 
+                    alt="phone icon" 
+                />
+                <p>(212) 555-4567</p>
+            </div>
+            <div className="info-group">
+                <img 
+                    src="./images/mail.png" 
+                    alt="mail icon"
+                />
+                <p>thecat@hotmail.com</p>
+            </div>
+        </article>
+        
+        <article className="contact-card">
+            <img 
+                src="./images/gato4.jpg"
+                alt="Photo of Pumpkin"
+            />
+            <h3>Pumpkin</h3>
+            <div className="info-group">
+                <img 
+                    src="./images/phone.png" 
+                    alt="phone icon" 
+                />
+                <p>(0800) CAT KING</p>
+            </div>
+            <div className="info-group">
+                <img 
+                    src="./images/mail.png" 
+                    alt="mail icon"
+                />
+                <p>pumpkin@scrimba.com</p>
+            </div>
+        </article>
+        
+    </div>
+)
 }
